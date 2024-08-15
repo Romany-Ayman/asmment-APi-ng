@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <div class="row">
+      @for (iteam of pernds ; track $index) {
+      <div class="col-md-4 gap-3">
+        <div class="border">
+          <div class="imag-card">
+            <img [src]="iteam.image" class="w-100" alt="" />
+          </div>
+
+          <h3>category:{{ iteam.category }}</h3>
+          <p>
+            <span class="bg-secondary rounded-2 p-2"
+              >price:{{ iteam.price }} $</span
+            >
+          </p>
+          <p>description:{{ iteam.description }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
